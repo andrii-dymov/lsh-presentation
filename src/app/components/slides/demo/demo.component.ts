@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LshService, IMatch } from 'src/app/services/lsh.service';
-import { texts as defaultTexts } from 'src/app/components/slides/demo/default.texts';
+import { LshService, IMatch } from '../../../services/lsh.service';
+import { texts as defaultTexts } from './default.texts';
 
 @Component({
   selector: 'app-demo',

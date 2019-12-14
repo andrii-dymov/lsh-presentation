@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
 import { LshService } from './services/lsh.service';
 import { ComplexityComponent } from './components/slides/complexity/complexity.component';
-import { AppRoutingModule } from 'src/app/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { DemoComponent } from './components/slides/demo/demo.component';
 import { IntroComponent } from './components/slides/intro/intro.component';
 import { ReferencesComponent } from './components/slides/references/references.component';
