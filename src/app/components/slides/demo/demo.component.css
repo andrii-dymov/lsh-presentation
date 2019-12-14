@@ -1,0 +1,4 @@
+.text-item:hover {
+  cursor: pointer;
+  color: pink;
+}

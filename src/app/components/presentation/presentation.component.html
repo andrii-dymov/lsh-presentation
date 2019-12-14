@@ -1,0 +1,8 @@
+<div class="container">
+  <nav class="text-center m-2">
+    <a [routerLink]="[prevSlide]" routerLinkActive="router-link-active">&lt;</a>
+    <span class="m-2">{{ currIndex }}</span>
+    <a [routerLink]="[nextSlide]" routerLinkActive="router-link-active">&gt;</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,33 @@
+<article>
+  <h2>Popular methods for similarity calculation</h2>
+  <dl>
+    <dt>Hamming distance</dt>
+    <dd>
+      <p>
+        Hamming distance is a metric for comparing two binary data strings. While comparing two binary strings of equal
+        length, Hamming distance is the number of bit positions in which the two bits are different.
+      </p>
+      <p>
+        Suppose there are two strings 1101 1001 and 1001 1101.
+      </p>
+      <p>
+        11011001 ⊕ 10011101 = 01000100. Since, this contains two 1s, the Hamming distance, d(11011001, 10011101) = 2.
+      </p>
+    </dd>
+    <dt>Jaccard distance</dt>
+    <dd>
+      <p>
+        The Jaccard coefficient is defined as s(A, B)= |A ∩ B| / |A ∪ B|.
+      </p>
+      <p>
+        Jaccard coefficient is a similarity measure: higher values of Jaccard coefficient
+        indicate higher similarity of the sets. One can obtain the corresponding distance measure by taking
+        d(A, B) = 1 – s(A, B).
+      </p>
+      <p>
+        For this measure, the min-hash LSH family can be used. Pick a random permutation on the ground
+        universe U. Then, define h<sub>π</sub>(A) = min{{ '{' }} π(a) | a ∈ A {{ '}' }}. Then the probability of collision Pr<sub>π</sub>[h<sub>π</sub>(A) = h<sub>π</sub>(B)] = s(A, B).
+      </p>
+    </dd>
+  </dl>
+</article>

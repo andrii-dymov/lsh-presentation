@@ -1,0 +1,15 @@
+.explanation {
+  display: flex;
+  justify-content: center;
+}
+img {
+  display: block;
+  width: 600px;
+  height: 300px;
+}
+table {
+  margin: 2rem 0 0 2rem;
+}
+td {
+  padding: 0.5rem;
+}

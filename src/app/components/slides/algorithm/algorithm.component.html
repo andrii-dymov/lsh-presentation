@@ -1,0 +1,27 @@
+<article>
+  <h2>The Algorithm</h2>
+  <h3>Preprocessing</h3>
+  <ul>
+    <li>
+      Choose L functions g<sub>j</sub>, j = 1,…L, by setting g<sub>j</sub> = (h<sub>1,j</sub>, h<sub>2,j</sub>,…h<sub>k,j</sub>), where h<sub>1,j</sub>,…h<sub>k,j</sub> are chosen at random
+      from the LSH family H
+    </li>
+    <li>
+      Construct L hash tables, where, for each j = 1,…L, the j<sup>th</sup> hash table contains the dataset points hashed using
+      the function g<sub>j</sub>
+    </li>
+  </ul>
+  <h3>Query for point q</h3>
+  <p>For each j = 1, 2,…L</p>
+  <ul>
+    <li>
+      Retrieve the points from the bucket g<sub>j</sub>(q) in the j<sup>th</sup> hash table
+    </li>
+    <li>
+      For each of the retrieved point, compute the distance from q to it, and report the point if it is a correct answer
+    </li>
+    <li>
+      (optional) Stop as soon as the number of reported points is more than L
+    </li>
+  </ul>
+</article>

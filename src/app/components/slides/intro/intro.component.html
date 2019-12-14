@@ -1,0 +1,35 @@
+<article>
+  <h2>Intro</h2>
+  <p>
+    <q><strong>Locality-Sensitive Hashing</strong> is an algorithmic technique that hashes similar input items into the
+      same "buckets" with high probability.</q> - Wiki
+  </p>
+  <p>
+    One of the main applications of LSH is to provide a method for efficient approximate nearest neighbor search
+    algorithms.
+  </p>
+  <p>
+    There are several efficient algorithms known for the case when the dimension d is low (e.g., up to 10 or 20). The
+    first such data structure, called kd-trees was introduced in 1975 by Jon Bentley.
+  </p>
+  <p>
+    However, despite decades of intensive effort, the current solutions suffer from either space or query time that is
+    exponential in d. In fact, for large enough d, in theory or in practice, they often provide little improvement over a
+    linear time algorithm that compares a query to each point from the database. This phenomenon is often called “the
+    curse of dimensionality.”
+  </p>
+  <p>
+    From the mid-1990s to mid-2000s several researchers have proposed methods for overcoming the running time bottleneck
+    by using approximation.
+  </p>
+  <p>
+    The appeal of this approach is that,
+    in many cases, an approximate nearest neighbor is almost as good as the
+    exact one.
+  </p>
+  <p>
+    Moreover, an efficient approximation algorithm can be used to
+    solve the exact nearest neighbor problem by enumerating all approximate nearest neighbors and choosing the closest
+    point.
+  </p>
+</article>

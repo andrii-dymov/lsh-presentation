@@ -1,0 +1,12 @@
+img {
+  display: block;
+  margin: 0 auto;
+}
+img.buckets {
+  width: 600px;
+  height: 550px;
+}
+img.probability {
+  width: 600px;
+  height: 280px;
+}

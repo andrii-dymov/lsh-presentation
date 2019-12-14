@@ -1,0 +1,21 @@
+<h2>Demo</h2>
+<div class="form-group">
+  <textarea #userText id="user-text" rows="3" class="form-control mb-2"></textarea>
+  <button (click)="addText(userText.value)" class="btn btn-primary">Add Text</button>
+</div>
+<div *ngIf="currentText">
+  <p>
+    Selected text:
+  </p>
+  <p>
+    {{ currentText.value }}
+  </p>
+</div>
+<h3>Matches:</h3>
+<p *ngFor="let m of matches"><span>{{ m.sim }}% :</span>
+  {{ m.b }}
+</p>
+<h3>Known texts:</h3>
+<p *ngFor="let t of texts" class="text-item" (click)="selectText(t.id)">
+  {{ t.value }}
+</p>
