@@ -11,10 +11,12 @@ import { MinhashComponent } from './components/slides/minhash/minhash.component'
 import { BucketsComponent } from './components/slides/buckets/buckets.component';
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: 'slides', pathMatch: 'full' },
   {
     path: 'slides',
     component: PresentationComponent,
     children: [
+      { path: '', redirectTo: 'intro', pathMatch: 'full' },
       { path: 'intro', component: IntroComponent },
       { path: 'family', component: FamilyComponent },
       { path: 'algorithm', component: AlgorithmComponent },
@@ -23,10 +25,9 @@ const appRoutes: Routes = [
       { path: 'complexity', component: ComplexityComponent },
       { path: 'demo', component: DemoComponent },
       { path: 'references', component: ReferencesComponent },
-      { path: '', redirectTo: 'intro', pathMatch: 'full' },
     ],
   },
-  { path: '**', redirectTo: '/slides' },
+  { path: '**', redirectTo: 'slides' },
 ];
 
 @NgModule({
